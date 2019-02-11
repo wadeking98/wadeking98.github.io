@@ -6,7 +6,7 @@
 
     <body>
     <h1><p>
-        Wade King
+        <u>Wade King</u>
     </p></h1>
 
     <br>
@@ -23,67 +23,68 @@
 
     <ul id = "lang" class = "token">
         <li>
-            <div><p>
+            <div id = "java">
+                <p>
                     Java
             </p></div>
         </li>
 
         <li>
-            <div><p>
+            <div id = "cpp"><p>
                 C/C++
             </p></div>
         </li>
 
         <li>
-            <div><p>
+            <div id = "js"><p>
                 Javascript
             </p></div>
         </li>
 
         <li>
-            <div><p>
+            <div id = "php"><p>
                 Php
             </p></div>
         </li>
 
         <li>
-            <div><p>
+            <div id = "python"><p>
                 Python
             </p></div>
         </li>
 
         <li>
-            <div><p>
+            <div id="cs"><p>
                 C#
             </p></div>
         </li>
 
         <li>
-            <div><p>
-                SQL
+            <div id = "sql"><p>
+                MySQL
             </p></div>
         </li>
 
         <li>
-            <div><p>
+            <div id="css"><p>
                 CSS
             </p></div>
         </li>
 
         <li>
-            <div><p>
+            <div id="html"><p>
                 HTML
             </p></div>
         </li>
         
         <li>
-            <div><p>
+            <div id = "ard"><p>
                 Arduino
             </p></div>
         </li>
 
         <li>
-            <div><p>
+            <div id = "avr"><p>
                 AVR
             </p></div>
         </li>
@@ -104,14 +105,14 @@
         
             <ul id = "plat" class="token">
                 <li>
-                    <div><p>
+                    <div id="unity"><p>
                         Unity
                     </p></div>
                 </li>
         
                 <li>
                     <div><p>
-                        Android
+                        Android<br/>Studio
                     </p></div>
                 </li>
         
@@ -212,8 +213,9 @@
     .token li div{
         width: 15vh;
         height: 15vh;
-        background-color: rgb(87, 79, 79);
+        background-color: rgb(255, 255, 255);
         border-radius: 50%;
+        vertical-align: top;
         position: relative;
     }
 
@@ -237,10 +239,68 @@
         width: 20vh;
     }
 
+    .token li div{
+        
+        background-size: 10vh 10vh;
+        background-repeat: no-repeat;
+        background-position: 2.5vh 2.5vh;
+    }
+
+    #java{
+        background-image: url("images/java.png");
+    }
+    #cpp{
+        background-image: url("images/cpp.png");
+    }
+    #js{
+        background-image: url("images/js.png");
+    }
+
+    #php{
+        background-image: url("images/php.png");
+        background-size: 12vh 8vh;
+        background-position: 1.5vh 3.5vh;
+    }
+
+    #python{
+        background-image: url("images/python.png");
+    }
+    #cs{
+        background-image: url("images/cs.png");
+    }
+    #sql{
+        background-image: url("images/mysql.png");
+    }
+    #css{
+        background-image: url("images/css.png");
+        background-size: 9vh, 11vh;
+        background-position: 3vh 1.5vh;
+    }
+    #html{
+        background-image: url("images/html.png");
+        background-size: 12vh, 13vh;
+        background-position: 1.5vh 1.5vh;
+    }#ard{
+        background-image: url("images/ard.png");
+    }#avr{
+        background-image: url("images/avr.svg");
+    }
+
+
+    #unity{
+        background-image: url("images/unity.png");
+        background-position: 1.5vh 2.5vh;
+    }
+
     h1 p{
-        font-size: 3.5vh;
+        font-size: 5vh;
+        text-align: center;
     }h2 p{
         font-size: 3vh;
+    }
+
+    p{
+        font-family:'Courier New', Courier, monospace;
     }
 </style>
 </html>

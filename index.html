@@ -21,10 +21,10 @@
     <hr>
     </div>
 
-    <ul id = "lang">
+    <ul id = "lang" class = "token">
         <li>
             <div><p>
-                Java
+                    Java
             </p></div>
         </li>
 
@@ -90,9 +90,9 @@
 
     </ul>
 
+    <br/>
 
-
-    <div class="subtitle">
+        <div class="subtitle">
             <h2>
                 <p>
                 Platforms:
@@ -100,9 +100,9 @@
             </h2>
         
             <hr>
-            </div>
+        </div>
         
-            <ul id = "plat">
+            <ul id = "plat" class="token">
                 <li>
                     <div><p>
                         Unity
@@ -126,8 +126,74 @@
                         Netbeans
                     </p></div>
                 </li>
+
+                <li>
+                    <div>
+                        <p>
+                            Xampp
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <p>
+                            Autodesk
+                        </p>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div>
+                        <p>
+                            Solidworks
+                        </p>
+                    </div>
+                </li>
+
         
             </ul>
+
+        <br/>
+
+        <div class="subtitle">
+            <h2>
+                <p>
+                    Skills:
+                </p>
+            </h2>
+            <hr>
+        </div>
+
+        <ul id="skill" class="token">
+            <li>
+                <div>
+                    <p>
+                        Algorithms & <br/> data structures
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <p>
+                        3D modeling
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <p>
+                        Linux
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+
+
         
     </body>
 
@@ -136,13 +202,14 @@
         background-color: rgb(28, 110, 121);
         color: rgb(207, 217, 230);
     }
-    #lang li{
+    .token li{
         list-style: none;
         display: inline-block;
+        vertical-align: top;
         padding: 1.5vh;
     }
 
-    #lang li div{
+    .token li div{
         width: 15vh;
         height: 15vh;
         background-color: rgb(87, 79, 79);
@@ -150,35 +217,15 @@
         position: relative;
     }
 
-    #lang li div p{
+    .token li p{
         font-size: 2.5vh;
         position: relative;
         text-align: center;
-        top: 6vh;
+        top: 16vh;
     }
 
 
-    #plat li{
-        list-style: none;
-        display: inline-block;
-        padding: 1.5vh;
-    }
-
-    #plat li div{
-        width: 15vh;
-        height: 15vh;
-        background-color: rgb(87, 79, 79);
-        border-radius: 50%;
-        position: relative;
-    }
-
-    #plat li div p{
-        font-size: 2.5vh;
-        position: relative;
-        text-align: center;
-        top: 6vh;
-    }
-
+    
     .subtitle{
         position: relative;
     }

@@ -259,10 +259,15 @@
 
 
         </div>
+
+       
+        
             
     </body>
 
 <style>
+
+    
     html{
         height: 100%;
     }
@@ -287,6 +292,7 @@
     }
 
     /*styling and positioning the skill tokens*/
+
     .token li{
         list-style: none;
         display: inline-block;
@@ -300,6 +306,9 @@
         height: 15vh;
         background-color: rgb(255, 255, 255);
         border-radius: 50%;
+        border-style: solid;
+        border-width: 2vh;
+        border-color: rgba(104, 190, 190, 0.521);
         vertical-align: top;
         position: relative;
     }
@@ -309,6 +318,13 @@
         position: relative;
         text-align: center;
         top: 16vh;
+    }
+
+    .token li div{
+        
+        background-size: 10vh 10vh;
+        background-repeat: no-repeat;
+        background-position: 2.5vh 2.5vh;
     }
 
 
@@ -324,12 +340,9 @@
         width: 20vh;
     }
 
-    .token li div{
-        
-        background-size: 10vh 10vh;
-        background-repeat: no-repeat;
-        background-position: 2.5vh 2.5vh;
-    }
+    
+
+
 
 
     /*add pictures to the skill tokens*/
@@ -412,6 +425,14 @@
         background-image: url("images/webdes.png");
     }
 
+    /*add progress to the skill tokens*/
+    .quarter{
+        width:12vh; 
+        height:12vh; 
+        background-color: rgba(104, 190, 190, 0.521);
+        border-radius: 0 0 0 12vh;
+    }
+
     /*set font size and font family*/
     h1 p{
         font-size: 5vh;
@@ -427,6 +448,11 @@
 
     a{
         text-decoration: none;
+        color: rgb(90, 170, 170);
+    }
+
+    a:hover{
+        color: rgba(104, 190, 190, 0.521);
     }
 
     .textBody{

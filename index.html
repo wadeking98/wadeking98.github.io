@@ -56,68 +56,68 @@
 
         <ul id = "lang" class = "token">
             <li>
-                <div id = "java">
+                <div id = "java" class="full">
                     <p>
                         Java
                 </p></div>
             </li>
 
             <li>
-                <div id = "cpp"><p>
+                <div id = "cpp" class="tquart"><p>
                     C/C++
                 </p></div>
             </li>
 
             <li>
-                <div id = "js"><p>
+                <div id = "js" class="tquart"><p>
                     Javascript
                 </p></div>
             </li>
 
             <li>
-                <div id = "php"><p>
+                <div id = "php" class = "tquart"><p>
                     Php
                 </p></div>
             </li>
 
             <li>
-                <div id = "python"><p>
+                <div id = "python" class = "full"><p>
                     Python
                 </p></div>
             </li>
 
             <li>
-                <div id="cs"><p>
+                <div id="cs" class = "tquart"><p>
                     C#
                 </p></div>
             </li>
 
             <li>
-                <div id = "sql"><p>
+                <div id = "sql" class="tquart"><p>
                     MySQL
                 </p></div>
             </li>
 
             <li>
-                <div id="css"><p>
+                <div id="css" class="full"><p>
                     CSS
                 </p></div>
             </li>
 
             <li>
-                <div id="html"><p>
+                <div id="html" class="full"><p>
                     HTML
                 </p></div>
             </li>
             
             <li>
-                <div id = "ard"><p>
+                <div id = "ard" class="half"><p>
                     Arduino
                 </p></div>
             </li>
 
             <li>
-                <div id = "avr"><p>
+                <div id = "avr" class="half"><p>
                     AVR
                 </p></div>
             </li>
@@ -137,31 +137,31 @@
             
                 <ul id = "plat" class="token">
                     <li>
-                        <div id="unity"><p>
+                        <div id="unity" class="quart"><p>
                             Unity
                         </p></div>
                     </li>
             
                     <li>
-                        <div id = "and"><p>
+                        <div id = "and" class="quart"><p>
                             Android<br/>Studio
                         </p></div>
                     </li>
             
                     <li>
-                        <div id = "jbr"><p>
+                        <div id = "jbr" class="tquart"><p>
                             Jetbrains
                         </p></div>
                     </li>
             
                     <li>
-                        <div id = "netb"><p>
+                        <div id = "netb" class="tquart"><p>
                             Netbeans
                         </p></div>
                     </li>
 
                     <li>
-                        <div id = "xampp">
+                        <div id = "xampp" class="full">
                             <p>
                                 Xampp
                             </p>
@@ -169,7 +169,7 @@
                     </li>
 
                     <li>
-                        <div id = "adesk">
+                        <div id = "adesk" class="half">
                             <p>
                                 Autodesk
                             </p>
@@ -178,7 +178,7 @@
                     </li>
 
                     <li>
-                        <div id="sworks">
+                        <div id="sworks" class="half">
                             <p>
                                 Solidworks
                             </p>
@@ -186,7 +186,7 @@
                     </li>
 
                     <li>
-                        <div id="linux">
+                        <div id="linux" class="tquart">
                             <p>
                                 Linux
                             </p>
@@ -208,7 +208,7 @@
 
             <ul id="skill" class="token">
                 <li>
-                    <div id = "dstruct">
+                    <div id = "dstruct" class="full">
                         <p>
                             Data Structures
                         </p>
@@ -216,7 +216,7 @@
                 </li>
 
                 <li>
-                    <div id="threed">
+                    <div id="threed" class="tquart">
                         <p>
                             3D Modeling
                         </p>
@@ -224,7 +224,7 @@
                 </li>
 
                 <li>
-                    <div id="crypt">
+                    <div id="crypt" class="half">
                         <p>
                             Cryptography
                         </p>
@@ -232,7 +232,7 @@
                 </li>
 
                 <li>
-                    <div id="mthread">
+                    <div id="mthread" class="half">
                         <p>
                             Multi-Threading
                         </p>
@@ -240,7 +240,7 @@
                 </li>
 
                 <li>
-                    <div id="db">
+                    <div id="db" class="tquart">
                         <p>
                             DataBase
                         </p>
@@ -248,7 +248,7 @@
                 </li>
 
                 <li>
-                    <div id="webdes">
+                    <div id="webdes" class="tquart">
                         <p>
                             Web Design
                         </p>
@@ -261,18 +261,28 @@
         </div>
 
        
+        <!-- <div class="progress half"></div> -->
         
             
     </body>
 
 <style>
+    
 
+    /* .half{
+        width: 15vh;
+        height: 15vh;
+        background-color: white;
+        background-image: url("images/half.svg");
+        background-size: 10vh 10vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    } */
     
     html{
         height: 100%;
     }
     body{
-        /**/
         min-height: 100%;
         margin-top:20vh;
         margin-left:0vh;
@@ -298,20 +308,10 @@
         display: inline-block;
         vertical-align: top;
         padding: 1.5vh;
-        padding-bottom: 3.5vh;
+        margin-bottom: 5.5vh;
     }
 
-    .token li div{
-        width: 15vh;
-        height: 15vh;
-        background-color: rgb(255, 255, 255);
-        border-radius: 50%;
-        border-style: solid;
-        border-width: 2vh;
-        border-color: rgba(104, 190, 190, 0.521);
-        vertical-align: top;
-        position: relative;
-    }
+    
 
     .token li p{
         font-size: 2.5vh;
@@ -459,5 +459,55 @@
         font-size: 3vh;
     }
 
+
+    /*setting the progress for the skill tokens*/
+    .full{
+        width: 15vh;
+        height: 15vh;
+        background-color: rgb(255,255,255);
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 2vh;
+        border-color: rgba(104, 190, 190, 0.521);
+        vertical-align: top;
+        position: relative;
+    }
+    .tquart{
+        width: 15vh;
+        height: 15vh;
+        background-color: rgb(255,255,255);
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 2vh;
+        border-color: rgba(104, 190, 190, 0.521);
+        vertical-align: top;
+        position: relative;
+        border-right-color: transparent;
+    }.half{
+        width: 15vh;
+        height: 15vh;
+        background-color: rgb(255,255,255);
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 2vh;
+        border-color: rgba(104, 190, 190, 0.521);
+        vertical-align: top;
+        position: relative;
+        border-right-color: transparent;
+        border-top-color: transparent;
+    }.quart{
+        width: 15vh;
+        height: 15vh;
+        background-color: rgb(255,255,255);
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 2vh;
+        border-color: rgba(104, 190, 190, 0.521);
+        vertical-align: top;
+        position: relative;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-left-color:transparent;
+    }
 </style>
 </html>

@@ -1,7 +1,23 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-            
+            <script type = "text/javascript" src = "scripts/html2canvas.js"></script>
+            <script type="text/javascript" src = "scripts/jspdf.js"></script>
+
+            <script type="text/javascript">
+                function genPdf(){
+                    html2canvas(document.body).then(canvas => {
+                        
+                                var img = canvas.toDataURL("image/png");
+                                var doc = new jsPDF();
+
+                                doc.addImage(img, 'JPEG', 20, 20);
+                                doc.save("test.pdf");
+                                
+
+                        });
+                }
+            </script>
     </head>
     <body>
     <div id = "header">
@@ -44,6 +60,11 @@
                 
             </p>
         </div>
+
+
+        <!--
+            Skills
+        -->
 
         <div class="subtitle">
         <h2>
@@ -258,11 +279,41 @@
             </ul>
 
 
-        </div>
+            <!--
+                Work experience
+            -->
 
+
+            <div class="subtitle">
+                <h2>
+                    <p>
+                        <u>Work Experience:</u>
+                    </p>
+                </h2>
+            </div>
+
+
+            <div class = " textBody work-experience">
+                <div><p>
+                    <u>Greek Heritage Project Museum</u>
+                </p></div>
+                <p>
+                Completed coop term project of a full system to catalogue museum artifacts and a <br/>
+                user interface to search the database. Responsible for all aspects of the project <br/>
+                including planning, design, development, testing and implementation. Worked with <br/>
+                the key sponsor of the project to create a successful system for the museum that <br/>
+                utilized technologies of…...<br/>
+                This system will handle up to #### of artifacts and hundreds of users (provide info<br/>
+                about the system)<br/>
+                Once the system was operational, I provided demonstrations and instruction on the<br/>
+                system to stakeholders and interested parties at Greek days, over 3 consecutive<br/>
+                days.<br/>
+                </p>
+            </div>
+
+            
        
-        <!-- <div class="progress half"></div> -->
-        
+        <a href = "javascript:genPdf()">Download PDF</a>
             
     </body>
 
@@ -438,6 +489,14 @@
         font-size: 5vh;
         text-align: center;
     }h2 p{
+        font-size: 3vh;
+    }
+
+    .secondary{
+        margin-left: 5vh;
+    }
+
+    .duties{
         font-size: 3vh;
     }
 

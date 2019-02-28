@@ -37,7 +37,7 @@
 
                     function genPdf() {
                     var doc = new jsPDF('p', 'in', 'letter');
-                    var source = $('body').first();
+                    var source = $('div').first();
                     var specialElementHandlers = {
                     '#bypassme': function(element, renderer) {
                     return true;

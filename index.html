@@ -9,10 +9,10 @@
                 function genPdf(){
                     html2canvas(document.body).then(canvas => {
                         
-                                //var img = canvas.toDataURL("image/png");
+                                var img = canvas.toDataURL("image/png");
                                 var doc = new jsPDF();
 
-                                //doc.addImage(img, 'JPEG', 20, 20);
+                                doc.addImage(img, 'JPEG', 20, 20);
                                 doc.save("test.pdf");
                                 
 

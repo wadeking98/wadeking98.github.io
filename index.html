@@ -6,8 +6,7 @@
             <script type="text/javascript" src = "scripts/FileSaver.js"></script>
 
             <script type="text/javascript">
-                import * as jspdf from 'jspdf';  
-                import * as html2canvas from "html2canvas";
+                
                 function genPdf(){
                     // this generates single page
                     var data = document.getElementsByTagName('body')[0];  
@@ -26,7 +25,7 @@
                     pdf.save('report.pdf'); // Generated PDF   
                     });  
 
-}
+                }
                 
             </script>
     </head>

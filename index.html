@@ -11,7 +11,8 @@
                         
                                 var img = canvas.toDataURL("image/png");
                                 var doc = new jsPDF();
-                                doc.addImage(img, 'PNG', 0, 0,200, 200);
+                                doc.addPage(8,11);
+                                doc.addImage(img, 'PNG', 0, 0,50, 50);
                                 doc.save("test.pdf");
                                 
 
